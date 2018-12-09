@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            3rd Program
+        </title>
+    </head>
+    <body onload="start()">
+        <p id="res"></p>
+        <script>
+            var c=0;
+            var r;
+            function start(){
+                r=setInterval(incr,100);
+        }
+            function incr(){
+                c=c+1;
+                document.getElementById("res").innerHTML="Text Growing"+c+"px";
+                console.log("HI")
+                document.getElementById("res").style.fontSize=c+"pt";
+                document.getElementById("res").style.color="red";
+                if(c>50){
+                    clearInterval(r);
+                    r =setInterval(decr,100); 
+                }
+            }
+            function decr(){
+                c=c-1;
+                document.getElementById("res").innerHTML="Text Shrinking "+c+"px";
+                document.getElementById("res").style.fontSize=c+"pt";
+                document.getElementById("res").style.color="blue";
+                if(c<5){
+                    clearInterval(r);
+                    r =setInterval(incr,100); 
+                }
+            }
+        </script>
+
+    </body>
+</html>

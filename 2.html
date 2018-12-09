@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            2nd Program
+        </title>
+    </head>
+    <body onload="disp()">
+        <div id="res">         
+        </div>
+        <script>
+            function disp(){
+                result="<table border='3'><tr><th>No.</th><th>Square</th><th>Cube</th></tr>";
+                for(var i=1;i<=10;i++)
+                {
+                    result+="<tr><td>"+i+"</td><td>"+i*i+"</td><td>"+(i*i*i)+"</td></tr>";
+                }
+                result+="</table>"
+                document.getElementById("res").innerHTML=result;
+            }
+        </script>
+    </body>
+</html>

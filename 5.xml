@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="Utf-8"?>
+<?xml-stylesheet href="style.css"?>
+<Student>
+    <student1>
+        <name>Akhil</name>
+        <usn>100</usn>
+    </student1>
+    <student2>
+        <name>Akanksh</name>
+        <usn>101</usn>
+    </student2>
+    <student3>
+        <name>Bhaskar</name>
+        <usn>102</usn>
+    </student3>
+</Student>

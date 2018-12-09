@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            4th Program
+        </title>
+    </head>
+    <body>
+        <input type="text" id="stri" placeholder="Enter the string:" onBlur="vow()">
+        <input type="text" id="num" placeholder="Enter the number here:" onBlur="calc()">
+        <p id="res"></p>
+        <script>
+            function vow(){
+                var r=document.getElementById("stri").value.toLowerCase();
+                var a=r.length;
+                for(var i=0;i<a;i++){
+                    var c=r[i];
+                    if(c=='a'||c=='e'||c=='i'||c=='u'||c=='o'){
+                        document.getElementById("res").innerHTML=(i+1);
+                        return;
+                    }
+                }
+                document.getElementById("res").innerHTML="No Vowels";
+            }
+            function calc(){
+                var r=document.getElementById("num").value.split('').reverse().join('');
+                document.getElementById("res").innerHTML=r;
+            }
+        </script>
+    </body>
+</html>
